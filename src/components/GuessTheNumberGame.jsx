@@ -68,7 +68,7 @@ function GuessTheNumberGame() {
         onSubmit = { handleSubmit } 
       />
 
-      <button onClick = { handleRestart } className = { styles.button }> Reiniciar </button>
+      <button onClick = { handleRestart } className = { styles['cancel-button'] }> Reiniciar </button>
 
       <GameStatus score = { score } message = { message } hint = { hint } />
       <HighScore highScore = { highScore } />

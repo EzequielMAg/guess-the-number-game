@@ -14,18 +14,13 @@
 }
   
 .button {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
     background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
   
 .button:hover {
     background-color: #0056b3;
+    transform: scale(1.05); 
 }
   
 .status {
@@ -38,3 +33,24 @@
     margin: 0.5rem 0;
 }
   
+
+/* Estilos generales para el botón cancelar*/
+.cancel-button {
+    background-color: #d8000c; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+.cancel-button:hover {
+    background-color: #a70005; 
+    transform: scale(1.05); 
+}
+  
+.cancel-button:active {
+    background-color: #8a0002; 
+    transform: scale(0.95); 
+}
+
+.cancel-button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(216, 0, 12, 0.3);
+}
