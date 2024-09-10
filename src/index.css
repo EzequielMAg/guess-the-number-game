@@ -1,26 +1,7 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 1rem;
-  text-align: center;
+  padding: 0;
 }
-
-body {
-  margin: 0;
-/*   display: flex;
-  place-items: center; */
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  margin: 0.5rem 0;
-}
-/* ------------------------------------------------ */
 
 button {
   border-radius: 8px;
@@ -45,7 +26,7 @@ button:focus-visible {
   border-color: #cc0000;
 }
 
- /* Definir la animación para parpadear */
+ /* Animación para que el boton parpadee */
  @keyframes parpadeo {
   0%, 100% {
     background-color: #e60000;
@@ -57,5 +38,5 @@ button:focus-visible {
 
 /* Aplicar la animación al hacer clic */
 button:active {
-  animation: parpadeo 2s infinite; /* Parpadea por 2 segundos */
+  animation: parpadeo 2s infinite; 
 }
